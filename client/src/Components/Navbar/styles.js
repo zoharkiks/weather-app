@@ -13,14 +13,13 @@ export default makeStyles(() => ({
     backdropFilter: "blur( 10.0px )",
     webkitBackdropFilter: "blur( 10.0px )",
     border: "1px solid rgba( 255, 255, 255, 0.18 )",
+    
   },
 
   inputCity: {
     color: "white",
+    fontFamily:'Montserrat',
+    fontWeight:'400'
   },
 
-  test:{
-    display:'none',
-    
-  }
 }));

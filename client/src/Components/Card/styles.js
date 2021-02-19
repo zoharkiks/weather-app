@@ -1,11 +1,13 @@
-import { makeStyles } from "@material-ui/core/styles";
+import {
+  makeStyles
+} from "@material-ui/core/styles";
 
 export default makeStyles(() => ({
   card: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    justifyContent:'space-evenly',
+    justifyContent: 'space-evenly',
     marginTop: "50px",
     margin: "auto",
     width: "75%",
@@ -18,19 +20,34 @@ export default makeStyles(() => ({
     border: "1px solid rgba( 255, 255, 255, 0.18 )",
   },
 
-  containerTemp:{
-    display:'flex',
-    justifyContent:'space-evenly'
-},
-
-  containerMinMax:{
-      display:'flex',
-      justifyContent:'space-evenly'
+  location: {
+    fontFamily: "Roboto Mono"
+  },
+  temp: {
+    fontFamily: "Roboto Mono",
+    fontWeight: '300'
   },
 
-  media:{
+  extras:{
+    fontFamily:"Roboto Mono",
+    fontWeight:'300'
+  },
+
+  
+  containerTemp: {
+    display: 'flex',
+    justifyContent: 'space-evenly',
+
+  },
+
+  containerMinMax: {
+    display: 'flex',
+    justifyContent: 'space-evenly'
+  },
+
+  icon: {
     height: '5rem',
-    width:"5rem",
-    
+    width: "5rem",
+
   }
 }));

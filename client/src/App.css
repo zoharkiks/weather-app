@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&family=Roboto+Mono:wght@100;200;300;400;500&display=swap");
+
 body {
     background: rgb(238, 174, 202);
     background: linear-gradient(257deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);

@@ -16,6 +16,9 @@ function Navbar({ form, setForm, weather, setWeather }) {
     baseUrl: "https://api.openweathermap.org/data/2.5/",
   };
 
+console.log(weather);
+
+
   //   Fetch weather data from API
   async function weatherData(e) {
     e.preventDefault();
