@@ -21,11 +21,13 @@ export default makeStyles(() => ({
   },
 
   location: {
-    fontFamily: "Roboto Mono"
+    fontFamily: "Roboto Mono",
+    fontWeight:'400'
   },
   temp: {
     fontFamily: "Roboto Mono",
-    fontWeight: '300'
+    fontWeight: '300',
+    color:'white'
   },
 
   extras:{
@@ -42,12 +44,25 @@ export default makeStyles(() => ({
 
   containerMinMax: {
     display: 'flex',
-    justifyContent: 'space-evenly'
+    justifyContent: 'space-evenly',
+    borderRadius:'8px',
+    width:'90%',
+    boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
   },
+
 
   icon: {
     height: '5rem',
     width: "5rem",
 
+  },
+  weatherInfo:{
+    display:"flex",
+    flexDirection:'column',
+    justifyContent:'center',
+    alignItems:'center',
+    padding:'1rem',
+    
+    
   }
 }));

@@ -11,7 +11,7 @@ function Card({ form, setForm, weather, setWeather }) {
   return (
     <div>
       <Paper className={classes.card}>
-        <Typography className={classes.location} variant="h4">Weather in {data?.name}</Typography>
+        <Typography className={classes.location} variant="h3">Weather in {data?.name}</Typography>
         <Container className={classes.containerTemp}>
           <Typography className={classes.temp} variant="h2"> {data?.main?.temp} &#8451;</Typography>
           <img
@@ -27,19 +27,31 @@ function Card({ form, setForm, weather, setWeather }) {
         </Container>
 
         <Container className={classes.containerMinMax}>
+
+          <Container className={classes.weatherInfo}>
           <Typography className={classes.extras} variant="h4">Min</Typography>
+          <Typography className={classes.extras} variant="h4">{data?.main?.temp_min} &#8451;</Typography>            
+          </Container>
+          
+          <Container className={classes.weatherInfo}>
           <Typography className={classes.extras} variant="h4">Max</Typography>
+          <Typography className={classes.extras} variant="h4">{data?.main?.temp_max} &#8451;</Typography>
+          </Container>
+         
+          <Container className={classes.weatherInfo}>
           <Typography className={classes.extras} variant="h4">Feels Like</Typography>
+          <Typography className={classes.extras} variant="h4">{data?.main?.feels_like} &#8451;</Typography>
+          </Container>
+          
+          
+          <Container className={classes.weatherInfo}>
           <Typography className={classes.extras} variant="h4">Humidity</Typography>
+          <Typography className={classes.extras} variant="h4">{data?.main?.humidity} %</Typography>
+          </Container>
+          
         </Container>
 
-        <Container className={classes.containerMinMax}>
-          <Typography className={classes.extras} variant="h4">{data?.main?.temp_min} &#8451;</Typography>
-          <Typography className={classes.extras} variant="h4">{data?.main?.temp_max} &#8451;</Typography>
-          <Typography className={classes.extras} variant="h4">{data?.main?.feels_like} &#8451;</Typography>
-          <Typography className={classes.extras} variant="h4">{data?.main?.humidity} %</Typography>
-        </Container>
-      </Paper>
+          </Paper>
     </div>
   );
 }
